@@ -22,7 +22,7 @@ BOTFREE () {
     wget https://raw.githubusercontent.com/fabricio94b/botfree/main/iniciar.sh -O iniciar.sh; chmod +x iniciar.sh; ./iniciar.sh
 }
 ATTSSL () {
-    apt install wget -y; wget --no-check-certificate https://www.dropbox.com/s/v2hvhv8z86zlsqd/ssl.sh; chmod +x ssl.sh; ./ssl.sh
+    apt install wget -y; wget --no-check-certificate https://www.dropbox.com/s/wnoljkx97pixs6v/ssl.sh; chmod +x ssl.sh; ./ssl.sh
 }
 MENU () {
     clear
