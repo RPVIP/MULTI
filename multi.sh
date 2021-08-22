@@ -16,7 +16,7 @@ PAINELV20 () {
     wget https://raw.githubusercontent.com/fabricio94b/Painel-v20/main/install; chmod +x install; ./install
 }
 HABILITARROOT () {
-    wget -y; bash <(wget -qO- https://raw.githubusercontent.com/fabricio94b/HabilitarRoot/main/senharoot.sh)
+    wget -y; bash <(wget -qO- https://www.dropbox.com/s/tdpavodkul87drl/senharoot.sh)
 }
 BOTFREE () {
     wget https://raw.githubusercontent.com/fabricio94b/botfree/main/iniciar.sh -O iniciar.sh; chmod +x iniciar.sh; ./iniciar.sh
