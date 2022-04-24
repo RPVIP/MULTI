@@ -6,7 +6,7 @@ echo -e "\n\033[0;34m═══════════════════�
         echo ""
         echo -e "                 \033[1;33m• \033[1;31mATENCAO \033[1;33m• \033[0m"
         echo ""
-        echo -e "\033[1;31m• \033[1;33mINSTALADOR DO PAINEL WEB MEGASSH 2022\033[0m"
+        echo -e "\033[1;31m• \033[1;33mINSTALADOR DO PAINEL WEB MEGASSH 2022\033[0m•"
         echo""
         echo -e "\n\033[0;34m═════════════════════════════════════════════════\033[0m"
         echo ""
