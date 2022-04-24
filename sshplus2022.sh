@@ -65,7 +65,7 @@ installweb
 }
 installweb(){
 cd /var/www/html
-wget wget https://github.com/RPVIP/MULTI/raw/main/2022.zip
+wget https://www.dropbox.com/s/thaggb6o2gxqyk2/2022.zip
 unzip 2022.zip
 sed -i "s;1010;$root_password;g" /var/www/html/pages/system/pass.php > /dev/null 2>&1
 chmod 777 -R /var/www/
