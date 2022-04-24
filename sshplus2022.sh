@@ -2,7 +2,14 @@
 #Scripter PenguinEHIS
 menu(){
 clear
-echo "Instalador Painel WEB MEGASSH 2022 Centos 7"
+echo -e "\n\033[0;34m═════════════════════════════════════════════════\033[0m"
+        echo ""
+        echo -e "                 \033[1;33m• \033[1;31mATENCAO \033[1;33m• \033[0m"
+        echo ""
+        echo -e "                   INSTALADOR DO PAINEL WEB MEGASSH 2022          "
+        echo""
+        echo -e "\n\033[0;34m═════════════════════════════════════════════════\033[0m"
+        echo ""
 echo "Continuar? Y\n"
 echo -n "> "
 read option
