@@ -2,7 +2,7 @@
 #Scripter PenguinEHIS
 menu(){
 clear
-echo "Instalador Painel WEB SSHPlus 2022 Centos 7"
+echo "Instalador Painel WEB MEGASSH 2022 Centos 7"
 echo "Continuar? Y\n"
 echo -n "> "
 read option
@@ -51,14 +51,14 @@ fi
 }
 phpmyadminfix(){
 rm /etc/httpd/conf.d/phpMyAdmin.conf
-wget https://worldofdragon.net/phpfix/phpMyAdmin.conf -O /etc/httpd/conf.d/phpMyAdmin.conf
+wget https://raw.githubusercontent.com/RPVIP/MULTI/main/phpMyAdmin.conf -O /etc/httpd/conf.d/phpMyAdmin.conf
 chmod 777 /etc/httpd/conf.d/phpMyAdmin.conf
 service httpd restart
 installweb
 }
 installweb(){
 cd /var/www/html
-wget https://worldofdragon.net/painel/2022sshplus/2022.zip
+wget wget https://github.com/RPVIP/MULTI/raw/main/2022.zip
 unzip 2022.zip
 sed -i "s;1010;$root_password;g" /var/www/html/pages/system/pass.php > /dev/null 2>&1
 chmod 777 -R /var/www/
@@ -66,7 +66,7 @@ cd
 createdb
 }
 createdb(){
-wget https://worldofdragon.net/painel/2022sshplus/sshplus.sql
+wget https://raw.githubusercontent.com/RPVIP/MULTI/main/sshplus.sql
 mysql -h localhost -u root -p$root_password -e "CREATE DATABASE sshplus"
 mysql -h localhost -u root -p$root_password --default_character_set utf8 sshplus < sshplus.sql
 rm banco.sql
@@ -78,10 +78,10 @@ crontab -l > mycron
 echo "@reboot /root/startup" >> mycron
 crontab mycron
 rm mycron
-wget https://worldofdragon.net/painel/2022sshplus/cronc.sh
-wget https://worldofdragon.net/phpfix/cronb.sh
-wget https://worldofdragon.net/phpfix/clean.sh
-wget https://worldofdragon.net/phpfix/startup.sh
+wget https://raw.githubusercontent.com/RPVIP/MULTI/main/cronc.sh
+wget https://raw.githubusercontent.com/RPVIP/MULTI/main/cronb.sh
+wget https://raw.githubusercontent.com/RPVIP/MULTI/main/clean.sh
+wget https://raw.githubusercontent.com/RPVIP/MULTI/main/startup.sh
 chmod +x *.sh
 ./startup.sh
 final
